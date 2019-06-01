@@ -6,7 +6,7 @@ Setup
 3.dotnet run
 
 
-https://localhost:5001/fibonacci?index={} returns fibonacci number of that index
+https://localhost:5001/fibonacci?index={index} returns fibonacci number of that index
 
 if no index passed server returns random number
 
