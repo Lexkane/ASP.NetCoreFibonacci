@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPage</title>
+</head>
+<body>
+<div> This is some text</div>
+<button> This is a button</button>
+
+<script type="text/javascript">
+    window.addEventListener('load', () => {
+            document.querySelector('button').addEventListener('click', async () => {
+                const response = await fetch('path1');
+                if (response.ok) {
+                    const text = await response.text();
+                    window.alert("text");
+                }
+            });
+        }
+    );
+</script>
+</body>
+</html>
